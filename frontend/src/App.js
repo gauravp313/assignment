@@ -12,9 +12,9 @@ import "./App.css";
 const limit = 10;
 
 function App() {
-  const [selectedMonth, setSelectedMonth] = useState(months[3].value);
-
   const [searchText, setSearchText] = useState("");
+
+  const [selectedMonth, setSelectedMonth] = useState(months[3].value);
 
   const [page, setPage] = useState(1);
 
@@ -22,21 +22,20 @@ function App() {
     apiStatus: apiStatusConstants.initial,
     transactions: [],
     statistics: [],
-
     barChart: [],
   });
 
-  const onChangeMonth = (e) => {
+  const onChangeMonth = (event) => {
     setPage(1);
-    setSelectedMonth(e.target.value);
+    setSelectedMonth(event.target.value);
   };
 
-  const onChangeSearch = (e) => {
-    setSearchText(e.target.value);
+  const onChangeSearch = (event) => {
+    setSearchText(event.target.value);
   };
 
-  const onKeyDownSearch = async (e) => {
-    if (e.key === "Enter") {
+  const onKeyDownSearch = async (event) => {
+    if (event.key === "Enter") {
       await setPage(1);
       await getTransactionData();
     }
@@ -52,7 +51,7 @@ function App() {
       apiStatus: apiStatusConstants.inProgress,
     }));
     const offset = (page - 1) * limit;
-    const apiUrl = `https://roxiler-systems-assignment.onrender.com/combined-response?month=${selectedMonth}&s_query=${searchText}&limit=${limit}&offset=${offset}`;
+    const apiUrl = `https://roxilersystems-assignment.onrender.com/combined-response?month=${selectedMonth}&s_query=${searchText}&limit=${limit}&offset=${offset}`;
     const response = await fetch(apiUrl);
 
     if (response.ok) {
@@ -96,7 +95,6 @@ function App() {
           barChartData={apiData.barChart}
           month={currentMonth}
         />
-
       </div>
     );
   };

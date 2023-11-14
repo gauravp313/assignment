@@ -1,3 +1,10 @@
+export const apiStatusConstants = {
+  initial: "INITIAL",
+  success: "SUCCESS",
+  failure: "FAILURE",
+  inProgress: "IN_PROGRESS",
+};
+
 export const months = [
   { value: "", displayText: "Select Month" },
   { value: "01", displayText: "January" },
@@ -13,10 +20,3 @@ export const months = [
   { value: "11", displayText: "November" },
   { value: "12", displayText: "December" },
 ];
-
-export const apiStatusConstants = {
-  success: "SUCCESS",
-  failure: "FAILURE",
-  inProgress: "IN_PROGRESS",
-  initial: "INITIAL",
-};
