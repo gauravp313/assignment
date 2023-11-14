@@ -1,0 +1,37 @@
+.table-container {
+  font-size: 15px;
+  font-family: "Roboto";
+}
+
+table {
+  background-color: #fbdf83;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 8px;
+}
+.product-img {
+  height: 100px;
+  width: 100px;
+}
+.pagination-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pagination-container button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
