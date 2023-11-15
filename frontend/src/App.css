@@ -1,4 +1,4 @@
-.App {
+.container {
   background-color: #edf6f6;
   min-height: 100vh;
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 .heading-container {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50%;
   height: 200px;
   width: 200px;
@@ -20,7 +20,7 @@
 }
 
 .heading-container h1 {
-  font-family: roboto;
+  font-family: "Roboto";
   color: #404040;
   font-size: 32px;
 }
@@ -35,7 +35,7 @@
 }
 
 .filter-container input {
-  font-family: roboto;
+  font-family: "Roboto";
   background-color: #f8df8c;
   color: #000;
   font-size: 18px;
@@ -50,7 +50,7 @@
 }
 
 .filter-container select {
-  font-family: roboto;
+  font-family: "Roboto";
   background-color: #ebb840;
   font-size: 18px;
   border-radius: 8px;
@@ -72,12 +72,12 @@ select option:checked {
 }
 
 .view-container h1 {
-  font-family: roboto;
+  font-family: "Roboto";
   color: #404040;
 }
 
 .view-container button {
-  font-family: roboto;
+  font-family: "Roboto";
   color: #fff;
   font-size: 18px;
   margin: 20px;

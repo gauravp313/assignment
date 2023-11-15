@@ -141,7 +141,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="container">
       <div className="heading-container">
         <h1>Transaction Dashboard</h1>
       </div>
